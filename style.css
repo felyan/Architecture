@@ -67,6 +67,7 @@ html {
 .brand span {
   font-size: 3rem;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: .3rem;
   margin: 1.5rem 0 0 3rem;
 }
@@ -123,6 +124,16 @@ html {
   transition: all .3s;
 }
 
+.change .line-1 {
+  width: 55%;
+  transform: rotateZ(-15deg) translate(-.2rem, .8rem);
+}
+
+.change .line-3 {
+  width: 55%;
+  transform: rotateZ(15deg) translate(-.2rem, -.8rem);
+}
+
 .navigation {
   width: 100%;
   height: 100vh;
@@ -145,11 +156,41 @@ html {
   font-family: "Alfa Slab One", cursive;
   font-size: 5rem;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: .3rem;
   margin-bottom: 1rem;
   position: relative;
   /* opacity: 0;
   visibility: hidden; */
+}
+
+.change .navigation a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.change .navigation a:nth-child(1) {
+  transition: all .3s .3s;
+}
+
+.change .navigation a:nth-child(2) {
+  transition: all .3s .4s;
+}
+
+.change .navigation a:nth-child(3) {
+  transition: all .3s .5s;
+}
+
+.change .navigation a:nth-child(4) {
+  transition: all .3s .6s;
+}
+
+.change .navigation a:nth-child(5) {
+  transition: all .3s .7s;
+}
+
+.change .navigation a:nth-child(6) {
+  transition: all .3s .8s;
 }
 
 .navigation a::before {
@@ -188,4 +229,156 @@ html {
   transform: scale(1);
 }
 /* End of Navbar */
+
+/* Landing */
+.landing {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.landing-img {
+  width: 92%;
+  height: 70vh;
+  position: absolute;
+  top: 11rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .3;
+}
+
+.banner {
+  position: absolute;
+  bottom: 15rem;
+  left: 20rem;
+}
+
+.banner-heading {
+  font-size: 9rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.banner-heading span {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 8rem;
+  color: #dba81b;
+  letter-spacing: .5rem;
+}
+
+.banner-content {
+  display: flex;
+  text-align: start;
+}
+
+.banner-content p {
+  width: 45rem;
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 2rem;
+}
+
+.banner-content button {
+  width: 15rem;
+  height: 5rem;
+  background-color: transparent;
+  border: .3rem solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* End of Landing */
+
+/* About */
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #313133;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.about-left h2 {
+  font-size: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  width: 50rem;
+  margin-bottom: 6rem;
+}
+
+.about-left p {
+  font-size: 2rem;
+  color: #fff;
+  width: 50rem;
+  margin-bottom: 5rem;
+}
+
+.about-left button {
+  width: 18rem;
+  height: 5rem;
+  background-color: transparent;
+  border: .2rem solid #dba81b;
+  color: #dba81b;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+.frame {
+  width: 50rem;
+  height: 35rem;
+  border: 3rem solid #555;
+  position: absolute;
+  top: 16rem;
+  right: 20rem;
+}
+
+.about-img-wrapper {
+  width: 50rem;
+  height: 35rem;
+  position: absolute;
+  top: 8rem;
+  right: 14rem;
+}
+
+.about-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-bottom {
+  position: absolute;
+  bottom: 8rem;
+  right: 14rem;
+  height: 12rem;
+  border-right: 1rem solid #dba81b;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.section-bottom h2 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 6rem;
+  color: #555;
+  letter-spacing: .5rem;
+}
+
+.section-bottom h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+/* End of About */
+
 /* End of Container */
