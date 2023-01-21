@@ -570,4 +570,60 @@ html {
   color: #fff;
 }
 /* End of Customers */
+
+/* Contact */
+.contact {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-content h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.contact-content input {
+  width: 45rem;
+  height: 4rem;
+  background-color: transparent;
+  padding: 1.5rem 1.5rem 2.2rem 0;
+  border: none;
+  border-bottom: .1rem solid #777;
+  font-size: 1.8rem;
+  color: #ccc;
+  transition: border-bottom .3s;
+}
+
+.contact-content input:focus {
+  border-bottom: .1rem solid #dba81b;
+}
+
+.contact-content input::placeholder {
+  color:#ccc;
+  letter-spacing: .1rem;
+}
+
+.content-right {
+  position: relative;
+}
+
+.content-right i {
+  font-size: 1.8rem;
+  position:absolute;
+  top: 20%;
+  right: 0;
+  color:#ccc;
+  cursor: pointer;
+}
+/* End of Contact */
 /* End of Container */
